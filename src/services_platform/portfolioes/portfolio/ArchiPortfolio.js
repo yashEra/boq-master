@@ -1,25 +1,70 @@
-import React from 'react';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-// import logo from './logo.svg';
-// import { FaExternalLinkAlt } from 'react-icons/fa';
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 import '../style_portfolio/ArchiPortfolio.css';
-import image_a1 from './assests/image_a1.jpg';
-import image_a2 from './assests/image_a2.jpg';
-import image_a3 from './assests/image_a3.jpg';
-import image_a4 from './assests/image_a4.jpg';
-import image_a5 from './assests/image_a5.jpg';
-import image_a6 from './assests/image_a6.jpg';
-
+import image_a1 from './assest/image_a1.jpg';
+import image_a2 from './assest/image_a2.jpg';
+import image_a3 from './assest/image_a3.jpg';
+import image_a4 from './assest/image_a4.jpg';
+import image_a5 from './assest/image_a5.jpg';
+import image_a6 from './assest/image_a6.jpg';
 
 function App() {
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email: '',
+    mobile: '',
+    email_subject: '',
+    messages: '',
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    
+    if (
+      formData.fullname.trim() === '' ||
+      formData.email.trim() === '' ||
+      formData.mobile.trim() === '' ||
+      formData.email_subject.trim() === '' ||
+      formData.messages.trim() === ''
+    ) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please fill in all fields!',
+      });
+      return; 
+    }
+
+    
+    setTimeout(() => {
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent Successfully!',
+        text: 'Thank you for contacting us.',
+      });
+      
+      setFormData({
+        fullname: '',
+        email: '',
+        mobile: '',
+        email_subject: '',
+        messages: '',
+      });
+    }, 2000);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
   return (
     <div>
-     
-     <header className='headportfolio_a'>
-      <section className='portfolio_a'>
-	<h2 className='heading_a'>Latest <span>Project</span></h2>
+
+      <header className='headportfolio_a'>
+        <section className='portfolio_a'>
+          <h2 className='heading_a'>Latest <span>Project</span></h2>
 
 	<div className='portfolio-container_a'>
 		<div className ='portfolio-box_a'>
@@ -96,14 +141,69 @@ function App() {
 
           
           </div>
-          
-</section>
-    
 
-</header>
-    </div>
-   
-  );
+          {/* Contact section */}
+          <section className='contact_a' id='contact_a'>
+            <h2 className='heading_a'>Contact <span>Me!</span></h2>
+
+            <form onSubmit={handleSubmit}>
+              <div className='input-box_a'>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Full Name"
+                  value={formData.fullname}
+                  onChange={handleChange}
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className='input-box_a'>
+                <input
+                  type="number"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                />
+
+                <input
+                  type="text"
+                  name="email_subject"
+                  placeholder="Email Subject"
+                  value={formData.email_subject}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <textarea
+                name="messages"
+                id=""
+                cols={30}
+                rows={10}
+                placeholder="Your Message"
+                value={formData.messages}
+                onChange={handleChange}
+              />
+
+              <input
+                type='submit'
+                value='Send Message'
+                name="send"
+                className='btn_a'
+              />
+            </form>
+          </section>
+        </section>
+      </header>
+    </div> );
 }
 
 export default App;

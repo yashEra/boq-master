@@ -30,7 +30,7 @@
  }
  
 .portfolio_e section{
-    height :100vh;
+    
     padding: 10rem 9% 2rem;
  }
 
@@ -145,36 +145,90 @@
     .portfolio-layer_e h4{
         font-size: 1.5rem;
         justify-content: center;
+        padding-bottom: 300px;
+        
         
     }
+    .portfolio-container_e{
+        display: block;
+        
+    }
+    .portfolio-box_e{
+        margin-bottom: 30px;
+        
+    }
+    h2.heading_e{
+        
+        font-size: 3rem; 
+}
 }
 
-/* .contact{
+/* ---contact ---- */
+.contact_e span{
+    color:var(--main-color);
+ }
+
+ .contact_e h2{
+ margin-bottom: 3rem;
+ }
+.contact_e{
     background-color: var(--bg-color); 
 }
 
 
-.contact form{
-    max-width: 70rem;
+.contact_e form{
+    max-width: 40rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
+    padding-bottom: 100px;
 }
 
-.contact form .input-box{
+.contact_e form .input-box_e{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-.contact from .input-box input
-.contact from textarea{
+.contact_e form .input-box_e input,
+.contact_e form textarea{
     width: 100%;
     padding: 1.5rem;
-    font-size: 1.6rem;
+    font-size: .9rem;
     color:var(--text-color);
     background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 
-} */
+}
+
+.contact_e form .input-box_e input{
+    width:49%;
+}
+
+.contact_e form textarea{
+    resize :none;
+
+}
+.contact_e form .btn_e{
+    margin-top: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    height: 30px;
+    width: 200px;
+    
+    
+}
+
+
+.btn_e:hover{
+    box-shadow: none;
+}
