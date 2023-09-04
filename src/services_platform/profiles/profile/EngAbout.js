@@ -12,7 +12,7 @@ function EngAbout() {
         <img className="engineer_dp_e" src={EngDp} />
 
         <div className="description_e">
-          With over 15 years of experience in civil engineering, I hold a
+          With over 7 years of experience in civil engineering, I hold a
           Bachelor of Science in Civil Engineering from Elmwood University. My
           career began at Horizon Engineering, where I worked on transformative
           infrastructure projects. Later, at Evergreen Constructors, I focused
@@ -31,33 +31,32 @@ function EngAbout() {
           <div className="column_e">
             <section>
               <h2>Full name</h2>
-              <p>[Your Name]</p>
+              <p>D.R.N.WEERAKOONE</p>
             </section>
 
             <section>
               <h2>Email Address</h2>
-              <p>[Your Email Address]</p>
+              <p>drdweerakoon123.gmail.com</p>
             </section>
-
             <section>
               <h2>Address</h2>
-              <p>[Your Address]</p>
+              <p>56/A, Konededniya, Dikella, Matara</p>
             </section>
           </div>
           <div className="column_e">
             <section>
               <h2>Contact Number</h2>
-              <p>[Your Contact Information]</p>
+              <p>+940759867349</p>
             </section>
 
             <section>
               <h2>Province</h2>
-              <p>[Your Province]</p>
+              <p>Southern</p>
             </section>
 
             <section>
               <h2>City</h2>
-              <p>[Your City]</p>
+              <p>Matara</p>
             </section>
             <button className="chat_button_e">Click to Chat</button>
             <a href="/eng-portfolio">
