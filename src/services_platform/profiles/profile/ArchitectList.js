@@ -61,7 +61,10 @@ export default function ArchitectList() {
       <div className="page_a">
         <div className="background_img_a"></div>
         <div className="topic_a">
-          Let Our <br /> <span className="main_a">ARCHITECT <br /> EXPERTS</span>
+          Let Our <br />{" "}
+          <span className="main_a">
+            ARCHITECT <br /> EXPERTS
+          </span>
           <br /> Show you the Way
         </div>
         <div className="architectlist">

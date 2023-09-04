@@ -43,34 +43,34 @@ function ArchAbout() {
         <div className="two-column-container_a">
           <div className="column_a">
             <section>
-              <h2>Full name</h2>
-              <p>[Your Name]</p>
+              <h2>Full name :</h2>
+              <p>A.R.D. Rathnayake</p>
             </section>
 
             <section>
-              <h2>Email Address</h2>
-              <p>[Your Email Address]</p>
+              <h2>Email Address :</h2>
+              <p>ardrathnayake.gmail.com</p>
             </section>
 
             <section>
-              <h2>Address</h2>
-              <p>[Your Address]</p>
+              <h2>Address :</h2>
+              <p>234/4,udawala,hanthana,kandy</p>
             </section>
           </div>
           <div className="column_a">
             <section>
-              <h2>Contact Number</h2>
-              <p>[Your Contact Information]</p>
+              <h2>Contact Number :</h2>
+              <p>+940777458765</p>
             </section>
 
             <section>
-              <h2>Province</h2>
-              <p>[Your Province]</p>
+              <h2>Province :</h2>
+              <p>Central</p>
             </section>
 
             <section>
-              <h2>City</h2>
-              <p>[Your City]</p>
+              <h2>City :</h2>
+              <p>Kandy</p>
             </section>
             <button className="chat_button_a" onClick={openChat}>
               Click to Chat

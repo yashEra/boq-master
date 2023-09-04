@@ -1,9 +1,22 @@
-import React from "react";
+// import React from "react";
 // import Navbar from "./Navbar";
 import "../admin/style/style.css";
 
-//import React, { Component } from 'react';
+import React, { Component } from 'react';
 //import './style.css'; // Import your CSS file
+
+import logoImage from "../images/logo.jpg";
+import p1Image from "./assests/p1.jpg";
+import p2Image from "./assests/p2.jpg";
+import p3Image from "./assests/p3.jpg";
+import p4Image from "./assests/p4.jpg";
+import p5Image from "./assests/p5.jpg";
+import p6Image from "./assests/p6.jpg";
+import p7Image from "./assests/p7.jpg";
+import p8Image from "./assests/p8.jpg";
+import p9Image from "./assests/p9.jpg";
+import p10Image from "./assests/p10.jpg";
+import p11Image from "./assests/p11.jpg";
 
 class AdminPanel extends Component {
   constructor() {
@@ -22,13 +35,12 @@ class AdminPanel extends Component {
 
     return (
       <div>
-        <section id="menu" className={menuActive ? 'active' : ''}>
+        <section id="menu" className={menuActive ? "active" : ""}>
           <div className="logo">
-            <img src="logo.jpg" alt="" />
+            <img src={logoImage} alt="" />
             <h2>BoQ Master</h2>
           </div>
           <div className="items">
-            
             <ul>
               <li>
                 <i className="fas fa-pen"></i> <a href="#">Dashboard</a>
@@ -44,7 +56,8 @@ class AdminPanel extends Component {
                 <i className="fas fa-gear"></i> <a href="#">Appearance</a>
               </li>
               <li>
-                <i className="fas fa-circle-question"></i><a href="#">Help</a>
+                <i className="fas fa-circle-question"></i>
+                <a href="#">Help</a>
               </li>
             </ul>
           </div>
@@ -63,7 +76,7 @@ class AdminPanel extends Component {
             </div>
             <div className="profile">
               <i className="far fa-bell"></i>
-              <img src="p1.jpg" alt="" />
+              <img src={p1Image} alt="" />
             </div>
           </div>
 
@@ -122,7 +135,7 @@ class AdminPanel extends Component {
               <tbody>
                 <tr>
                   <td className="people">
-                    <img src="p2.jpg" alt="p2"></img>
+                    <img src={p2Image} alt="p2"></img>
                     <div className="people-de">
                       <h5>Anne Wendy</h5>
                       <p>wen@gmail.com</p>
@@ -138,14 +151,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td className="accept"><a href="#">Accept</a></td>
+                  <td className="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-                  <td className="reject"><a href="#">Reject</a></td>
+                  <td className="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p3.jpg" alt=""></img>
+                    <img src={p3Image} alt=""></img>
                     <div class="people-de">
                       <h5>Johnson Doe</h5>
                       <p>johnson@gmail.com</p>
@@ -161,15 +178,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p4.jpg" alt=""></img>
+                    <img src={p4Image} alt=""></img>
                     <div class="people-de">
                       <h5>Roita Bell</h5>
                       <p>roi@gmail.com</p>
@@ -185,15 +205,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p5.jpg" alt=""></img>
+                    <img src={p5Image} alt=""></img>
                     <div class="people-de">
                       <h5>Henry Shawn</h5>
                       <p>henry@gmail.com</p>
@@ -209,15 +232,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p6.jpg" alt=""></img>
+                    <img src={p6Image} alt=""></img>
                     <div class="people-de">
                       <h5>Miranda Croos</h5>
                       <p>mi@gmail.com</p>
@@ -233,15 +259,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p7.jpg" alt=""></img>
+                    <img src={p7Image} alt=""></img>
                     <div class="people-de">
                       <h5>Kristine Jane</h5>
                       <p>kris@gmail.com</p>
@@ -257,15 +286,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p8.jpg" alt=""></img>
+                    <img src={p8Image} alt=""></img>
                     <div class="people-de">
                       <h5>John Park</h5>
                       <p>john@gmail.com</p>
@@ -281,15 +313,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p9.jpg" alt=""></img>
+                    <img src={p9Image} alt=""></img>
                     <div class="people-de">
                       <h5>David Roger</h5>
                       <p>dav@gmail.com</p>
@@ -305,15 +340,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p10.jpg" alt=""></img>
+                    <img src={p10Image} alt=""></img>
                     <div class="people-de">
                       <h5>Ken Drake</h5>
                       <p>kdrake@gmail.com</p>
@@ -329,15 +367,18 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
 
                 <tr>
                   <td class="people">
-                    <img src="p11.jpg" alt=""></img>
+                    <img src={p11Image} alt=""></img>
                     <div class="people-de">
                       <h5>Kelly Joe</h5>
                       <p>joe@gmail.com</p>
@@ -353,13 +394,14 @@ class AdminPanel extends Component {
                     <p>Active</p>
                   </td>
 
-                  <td class="accept"><a href="#">Accept</a></td>
+                  <td class="accept">
+                    <a href="#">Accept</a>
+                  </td>
 
-
-                  <td class="reject"><a href="#">Reject</a></td>
+                  <td class="reject">
+                    <a href="#">Reject</a>
+                  </td>
                 </tr>
-
-                
               </tbody>
             </table>
           </div>
@@ -370,8 +412,6 @@ class AdminPanel extends Component {
 }
 
 export default AdminPanel;
-
-
 
 /*const stats = [
     { id: 1, name: 'Transactions every 24 hours', value: '44 million' },

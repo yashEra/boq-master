@@ -10,7 +10,6 @@ function QSAbout() {
       <NavBar />
       <div className="About_q">
         <img className="engineer_dp_q" src={QSDp} />
-
         <div className="description_q">
           With over a decade of experience as a Quantity Surveyor, I bring a
           unique blend of youthful energy and seasoned expertise to every
@@ -20,7 +19,6 @@ function QSAbout() {
           path led me through esteemed firms like QRtech, where I contributed
           significantly to optimizing project budgets.
         </div>
-
         <div className="about-me_q">
           <span className="bit_q">A BIT ABOUT ME</span>
           <br />
@@ -31,33 +29,33 @@ function QSAbout() {
           <div className="column_q">
             <section>
               <h2>Full name</h2>
-              <p>[Your Name]</p>
+              <p> K.N.M.JAYARATHNE</p>
             </section>
 
             <section>
               <h2>Email Address</h2>
-              <p>[Your Email Address]</p>
+              <p>jayarathne345.gmail.com</p>
             </section>
 
             <section>
               <h2>Address</h2>
-              <p>[Your Address]</p>
+              <p>113/Wataraka,Galle</p>
             </section>
           </div>
           <div className="column_q">
             <section>
               <h2>Contact Number</h2>
-              <p>[Your Contact Information]</p>
+              <p>+940712354768</p>
             </section>
 
             <section>
               <h2>Province</h2>
-              <p>[Your Province]</p>
+              <p>southern</p>
             </section>
 
             <section>
               <h2>City</h2>
-              <p>[Your City]</p>
+              <p>Galle</p>
             </section>
             <button className="chat_button_q">Click to Chat</button>
             <a href="/qs-portfolio">
@@ -66,7 +64,7 @@ function QSAbout() {
           </div>
         </div>
       </div>
-      < Footer />
+      <Footer />
     </div>
   );
 }

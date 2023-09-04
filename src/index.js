@@ -35,10 +35,10 @@ import QSPortfolio from "./services_platform/portfolioes/portfolio/QSPortfolio";
 import QSList from "./services_platform/profiles/profile/QSList"
 import EngList from "./services_platform/profiles/profile/EngineerList"
 import ArchList from "./services_platform/profiles/profile/ArchitectList"
-import RawMaterialsTable from "./boq_generator/RawMaterialDatabase";
-import CostEstimationTool from "./boq_generator/CostEstimationTool";
+import RawMaterialsTable from "./boq_generator/RawMaterialDatabase";import CostEstimationTool from "./boq_generator/CostEstimationTool";
 import PreDefineHome from "./boq_generator/pre-define-designs/PreDefineHome";
 import ChatBox from "./services_platform/chatbox";
+import AdminPanel from "./admin/AdminPanel";
 
 
 
@@ -80,7 +80,8 @@ root.render(
       <Route path="/cost-estimation" element={<CostEstimationTool />} />
       <Route path="/pre-define" element={<PreDefineHome />} />
       <Route path="/chat-box" element={<ChatBox />} />
-
+      <Route path="material-price-list" element={<RawMaterialsTable />} />
+      <Route path="/admin-panel" element={<AdminPanel />} />
     </Routes>
   </Router>
 );
