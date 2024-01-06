@@ -4,7 +4,7 @@ import axios from 'axios';
 import NavBar from '../Navbar';
 import Footer from '../Footer';
 
-export default function UserProfile() {
+export default function ClientProfile() {
   const [profileData, setProfileData] = useState({});
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ export default function UserProfile() {
     const userId = sessionStorage.getItem('userId');
 
     // Make API call to fetch user profile data
-    axios.get(`http://localhost:8080/Models/Process/professionalProfile.php?id=${userId}`)
+    axios.get(`http://localhost:8080/Models/Process/getClient.php?id=${userId}`)
       .then(response => {
         // Update state with fetched data
         setProfileData(response.data);
@@ -36,7 +36,7 @@ export default function UserProfile() {
       <NavBar />
       <div style={{paddingTop:'80px'}}>
       <div className=" bg-[#292240] flex items-center justify-center min-h-screen text-[#9e9cb6]">
-        <section className="w-full max-w-[600px] relative bg-[#231f39]/60 rounded-[6px] shadow-[0px_15px_39px_16px_rgba(52,45,91,0.65)] backdrop-blur-sm mx-2 overflow-hidden">
+        <section className="w-full max-w-[430px] relative bg-[#231f39]/60 rounded-[6px] shadow-[0px_15px_39px_16px_rgba(52,45,91,0.65)] backdrop-blur-sm mx-2 overflow-hidden">
           <div className="absolute text-[#231f39] bg-yellow-400 rounded-[4px] top-6 left-6 px-2 py-1 text-sm font-bold roll-in-blurred-right">
             {profileData.accountType}
           </div>

@@ -2,25 +2,25 @@ import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import ProList from './UsersList';
-import ClientList from './ClientList';
+import RawMaterialsAdmin from '../boq_generator/RawmaterialsAdmin';
 
 const navigation = [
-  { name: 'Dashboard', href: '/adminz-boq-mz', current: true },
-  { name: 'Row Material', href: '/adminz-rowz', current: false },
+  { name: 'Dashboard', href: '/adminz-boq-mz', current: false },
+  { name: 'Row Material', href: '/adminz-rowz', current: true },
   { name: 'other', href: '/other', current: false },
 ];
 
 const userNavigation = [
-  // { name: 'Your Profile', href: '#' },
-  // { name: 'Settings', href: '#' },
-  // { name: 'Sign out', href: '#' },
+//   { name: 'Your Profile', href: '#' },
+//   { name: 'Settings', href: '#' },
+//   { name: 'Sign out', href: '#' },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function AdminHome() {
+export default function RowMaterial() {
   return (
     <>
       <div className="min-h-screen flex bg-gray-100">
@@ -37,7 +37,7 @@ export default function AdminHome() {
                     />
                   </div>
                   <div className="ml-3">
-                    {/* <h1 className="text-white text-lg font-semibold">Dashboard</h1> */}
+                    <h1 className="text-white text-lg font-semibold"></h1>
                   </div>
                 </div>
                 <div className="-mr-2 flex md:hidden">
@@ -94,14 +94,13 @@ export default function AdminHome() {
         <div className="flex-1 overflow-x-hidden overflow-y-auto">
           <header className="bg-white shadow">
             <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold tracking-tight text-gray-900">BoQ Master</h1>
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
             </div>
           </header>
 
           <main>
             <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-              <ProList />
-              <ClientList />
+              <RawMaterialsAdmin />
             </div>
           </main>
         </div>
