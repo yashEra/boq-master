@@ -10,7 +10,7 @@ const RawMaterialsTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/Models/Process/rawmaterial.php")
+      .get("https://boq-master.infinityfreeapp.com/Models/Process/rawmaterial.php")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setData(response.data);
